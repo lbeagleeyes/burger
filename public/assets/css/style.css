@@ -1,6 +1,10 @@
-#main-container {
+#addForm {
   background-image: url("../img/bgMenu.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.create-form{
+  margin-left: 3%;
 }

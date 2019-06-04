@@ -1,10 +1,18 @@
-<li>
-  {{burger_name}}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <li>
+        {{burger_name}}
+      </li>
+    </div>
+    <div class="col-sm-6">
+        {{#if devoured}}
+        {{else}}
+        <button type="button" class="btn btn-danger devour" data-id="{{burger_id}}" data-devoured="{{devoured}}">
+          Devoure!
+        </button>
+        {{/if}}
+    </div>
+  </div>
 
-  {{#if devoured}}
-  {{else}}
-  <button class="devour" data-id="{{burger_id}}" data-devoured="{{devoured}}">
-    Devoure!
-  </button>
-  {{/if}}
-</li>
+</div>

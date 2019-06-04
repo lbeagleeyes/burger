@@ -1,3 +1,4 @@
+require("dotenv").config();
 
   exports.dbInfo = {
     psswd: process.env.DB_PSSWD,

@@ -43,7 +43,7 @@
 
 // module.exports = DBConnection;
 
-require("dotenv").config();
+
 var keys = require("./keys.js");
 
 // Set up MySQL connection.
@@ -53,8 +53,8 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Isengard123!", //keys.dbInfo.psswd,
-  database: "burgers_db" //keys.dbInfo.dbName
+  password: keys.dbInfo.psswd,
+  database: keys.dbInfo.dbName
 });
 
 // Make connection.
