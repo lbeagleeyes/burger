@@ -9,3 +9,7 @@
 * Node.js, Express, Express-Handlebars, mysql
 * MVC architecture 
 * Using provided orm
+
+## To do:
+
+* Use sequelize instead of provided orm
